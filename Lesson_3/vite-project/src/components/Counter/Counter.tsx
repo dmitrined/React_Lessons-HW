@@ -43,7 +43,7 @@ export default function Counter(): JSX.Element {
     <div className={`${style.container} ${style.counterClass}`}>
        <span style={{color:"red"}}>{counter}  €</span>
         <button className = {style.btn} type="button" onClick={handlePlus}>Добавить денег</button>
-        <button className = {style.btn} type="button" onClick={handleMinus}>Убрать лишние денег</button>
+        <button className = {style.btn} type="button" onClick={handleMinus}>Убрать лишние деньги</button>
         <button className = {style.btn} type="button" onClick={handlePlusHundred}>Добавить 100 €</button>
         <button className = {style.btn} type="button" onClick={handleReset}>Oбнулить</button>
 
