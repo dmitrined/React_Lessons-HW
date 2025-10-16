@@ -4,7 +4,8 @@ import style from './Alcohol.module.css'
 export default function Alcohol(): JSX.Element {
   const [name,setName] = useState<string>('')
   const [image,setImage] = useState<string>('')
-  //Асенхронный Promes
+  
+  //Асенхронный Promes 
   async function loadAlcohol():Promise<void>{
     const res = await fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
     const obj = await res.json()
